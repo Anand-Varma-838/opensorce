@@ -9,7 +9,8 @@ int replaceTimes = 0, processingOK = 1, executedSolver = 0, isFromMain = 0, solu
 clock_t start_processing, end_processing;
 
 void main(int argc, char *argv[]) {
- cout<<"GITAM Calc !!"	char dataToSolve[DIM] = "";
+        cout<<"GITAM Calc !!"	;
+	char dataToSolve[DIM] = "";
 	FILE *fout = NULL;
 	int Colors = 1, tD = 0, i = 0;
 	char  path[DIM] = "", trigData[DIM] = "";
@@ -1097,7 +1098,7 @@ boolean dataVerifier(char data[DIM], double result1, double result2, int comment
 			}
 		}
 		for (i = 0; data[i] != '\0'; i++) {
-			if (data[i] == '"' || data[i] == '%' || data[i] == '&' || data[i] == '"' || data[i] == '=' || data[i] == '?' || data[i] == '@' || data[i] == '£' || data[i] == '§' || data[i] == '\'' || data[i] == '€' || data[i] == '¨' || data[i] == '´' || data[i] == '`' || data[i] == 'ª' || data[i] == 'º' || data[i] == '~' || data[i] == ',' || data[i] == ':' || data[i] == '«' || data[i] == '»') {
+			if (data[i] == '"' || data[i] == '%' || data[i] == '&' || data[i] == '"' || data[i] == '=' || data[i] == '?' || data[i] == '@' || data[i] == 'Â£' || data[i] == 'Â§' || data[i] == '\'' || data[i] == 'Â€' || data[i] == 'Â¨' || data[i] == 'Â´' || data[i] == '`' || data[i] == 'Âª' || data[i] == 'Âº' || data[i] == '~' || data[i] == ',' || data[i] == ':' || data[i] == 'Â«' || data[i] == 'Â»') {
 				decision = false;
 				if (comment == 1) {
 					puts("\nYou entered invalid characters.\n");
